@@ -1,0 +1,16 @@
+<form [formGroup] = "deleteUserForm">
+    <div class="form-group">
+        <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="User Name"
+                name="username"
+                formControlName="username"
+        />
+    </div>
+    <br />
+    <button type="button" class="btn btn-primary btn-small" (click)="deleteUser()">Delete</button>
+    <h2 class="col-lg-12 font-monospace" style="color: #ECF0F5" *ngIf="submitted">Delete succsess</h2>
+    <h2 class="col-lg-12 font-monospace" style="color: #ECF0F5" *ngIf="notSubmittd">Delete not succsess</h2>
+</form>

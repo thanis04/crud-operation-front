@@ -1,0 +1,27 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">User Name</th>
+    <th scope="col">Full Name</th>
+    <th scope="col">Mobile Number</th>
+    <th scope="col">NIC</th>
+    <th scope="col">Created Date</th>
+    <th scope="col">Updated Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users">
+    <td>{{user.user_name}}</td>
+    <td>{{user.full_name}}</td>
+    <td>{{user.mobile_no}}</td>
+    <td>{{user.nic}}</td>
+    <td>{{user.created_date}}</td>
+    <td>{{user.updates_date}}</td>
+  </tr>
+  </tbody>
+</table>
+
+
+
+
+
